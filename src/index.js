@@ -73,6 +73,6 @@ countryListEl.addEventListener('click', chooseCard);
 function chooseCard(event) {
   inputEl.value = event.target.innerText.trim();
   const card = inputEl.value;
-  console.log(card);
   getCountries(card);
+  inputEl.value = '';
 }
